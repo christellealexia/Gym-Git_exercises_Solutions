@@ -324,5 +324,89 @@ HEAD is now at d2f1e94 Restored about.html and home.html files
  ~/Bundle1Exercise1 (dev)
 $
 ```
+## Bundle 2
+### Exercise 1
+
+```bash
+ ~/Bundle1Exercise1 (dev)
+$ git branch ft/bundle-2
+
+ ~/Bundle1Exercise1 (dev)
+$ git branch
+* dev
+  ft/bundle-2
+  main
+
+ ~/Bundle1Exercise1 (dev)
+$ checkout ft/bundle-2
+bash: checkout: command not found
+
+ ~/Bundle1Exercise1 (dev)
+$ git branch checkout ft/bundle-2
+
+ ~/Bundle1Exercise1 (dev)
+$ git branch
+  checkout
+* dev
+  ft/bundle-2
+  main
+
+ ~/Bundle1Exercise1 (dev)
+$ git branch -d checkout
+Deleted branch checkout (was d2f1e94).
+
+ ~/Bundle1Exercise1 (dev)
+$ git branch
+* dev
+  ft/bundle-2
+  main
+
+ ~/Bundle1Exercise1 (dev)
+$ git checkout ft/bundle-2
+Switched to branch 'ft/bundle-2'
+
+ ~/Bundle1Exercise1 (ft/bundle-2) 
+$ touch services.html
+
+ ~/Bundle1Exercise1 (ft/bundle-2) 
+$ git add .
+
+ ~/Bundle1Exercise1 (ft/bundle-2) 
+$ git commit -m 'Added services.html file'
+[ft/bundle-2 dc72be5] Added services.html file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 services.html
+
+ ~/Bundle1Exercise1 (ft/bundle-2) 
+$ git push
+fatal: The current branch ft/bundle-2 has no upstream branch.
+To push the current branch and set the remote as upstream, use  
+
+    git push --set-upstream origin ft/bundle-2
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.      
+
+
+ ~/Bundle1Exercise1 (ft/bundle-2) 
+$ git push --set-upstream origin ft/bundle-2
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 279 bytes | 279.00 KiB/s, done.    
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)   
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/bundle-2' on GitHub by visiting:
+remote:      https://github.com/christellealexia/Git-Bundle1-Exercise1/pull/new/ft/bundle-2
+remote:
+To https://github.com/christellealexia/Git-Bundle1-Exercise1.git
+ * [new branch]      ft/bundle-2 -> ft/bundle-2
+branch 'ft/bundle-2' set up to track 'origin/ft/bundle-2'.      
+
+ ~/Bundle1Exercise1 (ft/bundle-2) 
+$
+```
 
 
