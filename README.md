@@ -402,5 +402,175 @@ To https://github.com/christellealexia/Git-Bundle1-Exercise1.git
 $    
 
 ```
+### Exercise 2
+
+```bash
+
+ ~/Bundle1Exercise1 (main)        
+$ git pull
+Updating ebc71f6..7c13e72
+Fast-forward
+ about.html    |  0
+ home.html     | 10 ++++++++++
+ services.html |  0
+ 3 files changed, 10 insertions(+)
+ create mode 100644 about.html
+ create mode 100644 home.html
+ create mode 100644 services.html
+
+ 
+ ~/Bundle1Exercise1 (main)        
+$ git branch
+  dev
+  ft/bundle-2
+* main
+
+
+ ~/Bundle1Exercise1 (main)        
+$ git checkout -b ft/service-redesign
+Switched to a new branch 'ft/service-redesign'
+
+ ~/Bundle1Exercise1 (ft/service-redesign)
+$ git add .
+
+
+ ~/Bundle1Exercise1 (ft/service-redesign)
+$ git commit -m 'Updates on services.html'
+[ft/service-redesign 9d55b60] Updates on services.html
+ 1 file changed, 13 insertions(+)
+
+
+ ~/Bundle1Exercise1 (ft/service-redesign)
+$ git push
+fatal: The current branch ft/service-redesign has no upstream branch.
+To push the current branch and set the remote as upstream, use  
+
+    git push --set-upstream origin ft/service-redesign
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.      
+
+
+
+ ~/Bundle1Exercise1 (ft/service-redesign)
+$ git push --set-upstream origin ft/service-redesign
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 390 bytes | 390.00 KiB/s, done.    
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)   
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/service-redesign' on GitHub by visiting:
+remote:      https://github.com/christellealexia/Git-Bundle1-Exercise1/pull/new/ft/service-redesign
+remote:
+To https://github.com/christellealexia/Git-Bundle1-Exercise1.git
+ * [new branch]      ft/service-redesign -> ft/service-redesign 
+branch 'ft/service-redesign' set up to track 'origin/ft/service-redesign'.
+
+
+ ~/Bundle1Exercise1 (ft/service-redesign)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+
+ ~/Bundle1Exercise1 (main)        
+$ git commit -m 'Updates on services page'
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)    
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   services.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+
+ ~/Bundle1Exercise1 (main)        
+$ git push
+Everything up-to-date
+
+
+ ~/Bundle1Exercise1 (main)        
+$ git add .
+
+
+ ~/Bundle1Exercise1 (main)        
+$ git commit -m 'Updates on services page'
+[main 89042be] Updates on services page
+ 1 file changed, 14 insertions(+)
+
+
+ ~/Bundle1Exercise1 (main)        
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 407 bytes | 407.00 KiB/s, done.    
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)   
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/christellealexia/Git-Bundle1-Exercise1.git
+   7c13e72..89042be  main -> main
+
+
+ ~/Bundle1Exercise1 (main)        
+$ git checkout ft/service-redesign
+Switched to branch 'ft/service-redesign'
+Your branch is up to date with 'origin/ft/service-redesign'.    
+
+
+ ~/Bundle1Exercise1 (ft/service-redesign)
+$ git diff
+diff --git a/README..md b/README..md
+deleted file mode 100644
+index e011d03..0000000
+--- a/README..md
++++ /dev/null
+@@ -1 +0,0 @@
+-This is for exercise 1 bundle 1
+\ No newline at end of file
+
+
+ ~/Bundle1Exercise1 (ft/service-redesign)
+$ git merge
+Already up to date.
+
+
+ ~/Bundle1Exercise1 (ft/service-redesign)
+$ git merge main
+Auto-merging services.html
+CONFLICT (content): Merge conflict in services.html
+Automatic merge failed; fix conflicts and then commit the result.
+
+
+ ~/Bundle1Exercise1 (ft/service-redesign|MERGING)
+$ git add .
+
+
+ ~/Bundle1Exercise1 (ft/service-redesign|MERGING)
+$ git commit -m 'Merge'
+[ft/service-redesign e4509c7] Merge
+
+
+ ~/Bundle1Exercise1 (ft/service-redesign)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 267 bytes | 267.00 KiB/s, done.    
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)   
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/christellealexia/Git-Bundle1-Exercise1.git
+   9d55b60..e4509c7  ft/service-redesign -> ft/service-redesign 
+
+
+ ~/Bundle1Exercise1 (ft/service-redesign)
+$
+```
 
 
