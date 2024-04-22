@@ -878,4 +878,40 @@ branch 'ft/home-page-redesign' set up to track 'origin/ft/home-page-redesign'.
 PS C:\Users\LENOVO\Bundle1Exercise1> 
 ```
 
+## Bundle 4
+### Exercise 1
+
+```bash
+PS C:\Users\LENOVO\Bundle1Exercise1> git checkout main   
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+PS C:\Users\LENOVO\Bundle1Exercise1> git remote add git-copy https://github.com/christellealexia/gitLearning-exercises.git
+PS C:\Users\LENOVO\Bundle1Exercise1> git add .
+PS C:\Users\LENOVO\Bundle1Exercise1> git commit -m 'Changes made to home page'
+[main 5c991d0] Changes made to home page
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+PS C:\Users\LENOVO\Bundle1Exercise1> git push origin
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 398 bytes | 398.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/christellealexia/Git-Bundle1-Exercise1.git
+   89042be..5c991d0  main -> main
+PS C:\Users\LENOVO\Bundle1Exercise1> git push git-copy
+Enumerating objects: 20, done.
+Counting objects: 100% (20/20), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (18/18), done.
+Writing objects: 100% (20/20), 2.85 KiB | 486.00 KiB/s, done.
+Total 20 (delta 5), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (5/5), done.
+To https://github.com/christellealexia/gitLearning-exercises.git
+ * [new branch]      main -> main
+PS C:\Users\LENOVO\Bundle1Exercise1> 
+```
+
+
 
