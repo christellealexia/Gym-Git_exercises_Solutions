@@ -373,7 +373,33 @@ remote:      https://github.com/christellealexia/Git-Bundle1-Exercise1/pull/new/
 remote:
 To https://github.com/christellealexia/Git-Bundle1-Exercise1.git
  * [new branch]      ft/bundle-2 -> ft/bundle-2
-branch 'ft/bundle-2' set up to track 'origin/ft/bundle-2'.      
+branch 'ft/bundle-2' set up to track 'origin/ft/bundle-2'.  
+
+ ~/Bundle1Exercise1 (ft/bundle-2) 
+$ git add .
+
+
+ ~/Bundle1Exercise1 (ft/bundle-2) 
+$ git commit -m 'Updates'
+[ft/bundle-2 b8ae7f5] Updates
+ 1 file changed, 10 insertions(+)
+
+
+ ~/Bundle1Exercise1 (ft/bundle-2) 
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 353 bytes | 353.00 KiB/s, done.    
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)   
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/christellealexia/Git-Bundle1-Exercise1.git
+   dc72be5..b8ae7f5  ft/bundle-2 -> ft/bundle-2
+
+
+ ~/Bundle1Exercise1 (ft/bundle-2) 
+$    
 
  ~/Bundle1Exercise1 (ft/bundle-2) 
 $
