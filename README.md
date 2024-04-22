@@ -401,8 +401,6 @@ To https://github.com/christellealexia/Git-Bundle1-Exercise1.git
  ~/Bundle1Exercise1 (ft/bundle-2) 
 $    
 
- ~/Bundle1Exercise1 (ft/bundle-2) 
-$
 ```
 
 
