@@ -572,7 +572,7 @@ To https://github.com/christellealexia/Git-Bundle1-Exercise1.git
  ~/Bundle1Exercise1 (ft/service-redesign)
 $
 ```
-## Budle 3
+## Bundle 3
 ### Exercise 1
 ```bash
 LENOVO@DESKTOP-94SL70P MINGW64 ~/Bundle1Exercise1 (ft/service-redesign)
@@ -804,6 +804,78 @@ q
 
 This reverts commit 0b4f8b61407dcb21a8ba9ad226c163ed5e6137f4.
 
+```
+
+### Exercise 2
+
+
+```bash
+PS C:\Users\LENOVO\Bundle1Exercise1> git checkout ft/faq-page
+Already on 'ft/faq-page'
+Your branch is up to date with 'origin/ft/faq-page'.
+PS C:\Users\LENOVO\Bundle1Exercise1> git checkout ft/home-page-redesign
+error: pathspec 'ft/home-page-redesign' did not match any file(s) known to git
+PS C:\Users\LENOVO\Bundle1Exercise1> git checkout-b  ft/home-pag
+e-redesign
+git: 'checkout-b' is not a git command. See 'git --help'.
+PS C:\Users\LENOVO\Bundle1Exercise1> git checkout -b  ft/home-pa
+ge-redesign
+f a
+cmdlet, function, script file, or operable program. Check the
+spelling of the name, or if a path was included, verify that
+the path is correct and try again.
+At line:1 char:1
++ add .
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (add:S    CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\LENOVO\Bundle1Exercise1> git add .      
+PS C:\Users\LENOVO\Bundle1Exercise1> git commit -m 'Changes made to home page'
+On branch main
+Your branch is up to date with 'origin/main'.       
+
+nothing to commit, working tree clean
+PS C:\Users\LENOVO\Bundle1Exercise1> git checkout ft/home-page-redisign
+error: pathspec 'ft/home-page-redisign' did not match any file(s) known to git
+PS C:\Users\LENOVO\Bundle1Exercise1> git checkout ft/home-page-redesign
+Switched to branch 'ft/home-page-redesign'
+PS C:\Users\LENOVO\Bundle1Exercise1> git rebase main
+
+Current branch ft/home-page-redesign is up to date. 
+PS C:\Users\LENOVO\Bundle1Exercise1> git add .      
+PS C:\Users\LENOVO\Bundle1Exercise1> git commit -m 'Changes made to homepage'
+On branch ft/home-page-redesign
+nothing to commit, working tree clean
+PS C:\Users\LENOVO\Bundle1Exercise1> git add .
+PS C:\Users\LENOVO\Bundle1Exercise1> git commit -m 'Home page changed'
+[ft/home-page-redesign 429b901] Home page changed
+ 1 file changed, 3 insertions(+), 1 deletion(-)     
+PS C:\Users\LENOVO\Bundle1Exercise1> git push
+fatal: The current branch ft/home-page-redesign has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/home-page-redesign
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+PS C:\Users\LENOVO\Bundle1Exercise1> git push --set-upstream origin ft/home-page-redesign
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 365 bytes | 365.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/home-page-redesign' on GitHub by visiting:
+remote:      https://github.com/christellealexia/Git-Bundle1-Exercise1/pull/new/ft/home-page-redesign   
+remote:
+To https://github.com/christellealexia/Git-Bundle1-Exercise1.git
+ * [new branch]      ft/home-page-redesign -> ft/home-page-redesign
+branch 'ft/home-page-redesign' set up to track 'origin/ft/home-page-redesign'.
+PS C:\Users\LENOVO\Bundle1Exercise1> 
 ```
 
 
