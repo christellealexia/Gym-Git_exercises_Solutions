@@ -1,7 +1,10 @@
-#GIT EXERCISES
+# GIT EXERCISES
 
-##Bundle1
+## Bundle1
+
 ### Exercise1
+
+... bash
 
 LENOVO@DESKTOP-94SL70P MINGW64 ~
 $ mkdir Bundle1Exercise1
@@ -116,8 +119,9 @@ LENOVO@DESKTOP-94SL70P MINGW64 ~/Bundle1Exercise1 (dev)
 $ git branch
 * dev
   main
+  ...
 
-  ###Exercise 2
+  ### Exercise 2
 
   LENOVO@DESKTOP-94SL70P MINGW64 ~/Bundle1Exercise1 (dev)
 $ touch home.html
