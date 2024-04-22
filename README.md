@@ -332,36 +332,6 @@ $
 $ git branch ft/bundle-2
 
  ~/Bundle1Exercise1 (dev)
-$ git branch
-* dev
-  ft/bundle-2
-  main
-
- ~/Bundle1Exercise1 (dev)
-$ checkout ft/bundle-2
-bash: checkout: command not found
-
- ~/Bundle1Exercise1 (dev)
-$ git branch checkout ft/bundle-2
-
- ~/Bundle1Exercise1 (dev)
-$ git branch
-  checkout
-* dev
-  ft/bundle-2
-  main
-
- ~/Bundle1Exercise1 (dev)
-$ git branch -d checkout
-Deleted branch checkout (was d2f1e94).
-
- ~/Bundle1Exercise1 (dev)
-$ git branch
-* dev
-  ft/bundle-2
-  main
-
- ~/Bundle1Exercise1 (dev)
 $ git checkout ft/bundle-2
 Switched to branch 'ft/bundle-2'
 
