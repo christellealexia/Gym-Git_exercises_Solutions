@@ -572,5 +572,238 @@ To https://github.com/christellealexia/Git-Bundle1-Exercise1.git
  ~/Bundle1Exercise1 (ft/service-redesign)
 $
 ```
+## Budle 3
+### Exercise 1
+```bash
+LENOVO@DESKTOP-94SL70P MINGW64 ~/Bundle1Exercise1 (ft/service-redesign)
+$ git checkout -b ft/team-page
+Switched to a new branch 'ft/team-page'
+
+LENOVO@DESKTOP-94SL70P MINGW64 ~/Bundle1Exercise1 (ft/team-page)
+$ touch team.html
+
+LENOVO@DESKTOP-94SL70P MINGW64 ~/Bundle1Exercise1 (ft/team-page)
+$ git add .
+
+LENOVO@DESKTOP-94SL70P MINGW64 ~/Bundle1Exercise1 (ft/team-page)
+$ git commit -m 'Added team page'
+[ft/team-page 0b4f8b6] Added team page
+ 1 file changed, 14 insertions(+)
+ create mode 100644 team.html
+
+LENOVO@DESKTOP-94SL70P MINGW64 ~/Bundle1Exercise1 (ft/team-page)
+$ git push
+fatal: The current branch ft/team-page has no upstream branch.
+To push the current branch and set the remote as upstream, use  
+
+    git push --set-upstream origin ft/team-page
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.      
+
+
+LENOVO@DESKTOP-94SL70P MINGW64 ~/Bundle1Exercise1 (ft/team-page)
+$  git push --set-upstream origin ft/team-page
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 409 bytes | 204.00 KiB/s, done.    
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)   
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/team-page' on GitHub by visiting:
+remote:      https://github.com/christellealexia/Git-Bundle1-Exercise1/pull/new/ft/team-page
+remote:
+To https://github.com/christellealexia/Git-Bundle1-Exercise1.git
+ * [new branch]      ft/team-page -> ft/team-page
+branch 'ft/team-page' set up to track 'origin/ft/team-page'.    
+
+LENOVO@DESKTOP-94SL70P MINGW64 ~/Bundle1Exercise1 (ft/team-page)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+LENOVO@DESKTOP-94SL70P MINGW64 ~/Bundle1Exercise1 (main)        
+$ git branch ft/contact-page
+
+LENOVO@DESKTOP-94SL70P MINGW64 ~/Bundle1Exercise1 (main)        
+$ git chekcout ft/team-page
+git: 'chekcout' is not a git command. See 'git --help'.
+
+The most similar command is
+        checkout
+
+LENOVO@DESKTOP-94SL70P MINGW64 ~/Bundle1Exercise1 (main)        
+$ git checkout ft/team-page
+Switched to branch 'ft/team-page'
+Your branch is up to date with 'origin/ft/team-page'.
+
+LENOVO@DESKTOP-94SL70P MINGW64 ~/Bundle1Exercise1 (ft/team-page)
+$ git log
+commit 0b4f8b61407dcb21a8ba9ad226c163ed5e6137f4 (HEAD -> ft/team-page, origin/ft/team-page)
+Author: Alexia Christelle <christellealexia53@gmail.com>        
+Date:   Mon Apr 22 22:06:47 2024 +0200
+
+    Added team page
+
+commit e4509c7a37b6392b0e01e9f35870a486ad0e4efb (origin/ft/service-redesign, ft/service-redesign)
+Merge: 9d55b60 89042be
+Author: Alexia Christelle <christellealexia53@gmail.com>        
+Date:   Mon Apr 22 21:44:22 2024 +0200
+
+    Merge
+
+commit 89042becc7a66379044f2123f7cdc2f02648a23f (origin/main, main, ft/contact-page)
+Author: Alexia Christelle <christellealexia53@gmail.com>        
+Date:   Mon Apr 22 21:32:28 2024 +0200
+
+    Updates on services page
+
+commit 9d55b60b4dfa46161363255ca2b036e56206385d
+Author: Alexia Christelle <christellealexia53@gmail.com>        
+Date:   Mon Apr 22 21:20:03 2024 +0200
+
+    Updates on services.html
+
+commit 7c13e72e97f42afde2bb786556a5af9fa1dcc160
+Merge: ebc71f6 dc72be5
+Author: Penine Ngizwenayo <78850411+peninah98@users.noreply.github.com>
+Date:   Mon Apr 22 17:11:11 2024 +0200
+
+    Merge pull request #1 from christellealexia/ft/bundle-2     
+
+    Ft/bundle 2
+
+commit dc72be52e85c34c2e4b45c87e6a3aa4b65f1b09f
+Author: Alexia Christelle <christellealexia53@gmail.com>        
+Date:   Mon Apr 22 16:30:48 2024 +0200
+
+    Added services.html file
+
+commit d2f1e94c862ad3fcc714ce3c2a093a464f012bfc (origin/dev, dev)
+Author: Alexia Christelle <christellealexia53@gmail.com>        
+Date:   Mon Apr 22 15:32:47 2024 +0200
+
+    Restored about.html and home.html files
+
+commit ebc71f63dcd4177db04331e8bd73736a9c3b877b
+Author: Alexia Christelle <christellealexia53@gmail.com>        
+Date:   Mon Apr 22 12:33:37 2024 +0200
+
+    Added a readme file
+
+commit 4be0fe5241556b3768ba6c1d21ec1594551240d5
+Author: Alexia Christelle <christellealexia53@gmail.com>        
+Date:   Mon Apr 22 12:31:30 2024 +0200
+
+    Added index.html and style.css files
+
+LENOVO@DESKTOP-94SL70P MINGW64 ~/Bundle1Exercise1 (ft/team-page)
+$
+
+LENOVO@DESKTOP-94SL70P MINGW64 ~/Bundle1Exercise1 (ft/team-page)
+$ git checkout ft/contact-page
+Switched to branch 'ft/contact-page'
+
+LENOVO@DESKTOP-94SL70P MINGW64 ~/Bundle1Exercise1 (ft/contact-page)
+$ git cherry-pick 0b4f8b61407dcb21a8ba9ad226c163ed5e6137f4 
+[ft/contact-page a143ea8] Added team page
+ Date: Mon Apr 22 22:06:47 2024 +0200
+ 1 file changed, 14 insertions(+)
+ create mode 100644 team.html
+
+LENOVO@DESKTOP-94SL70P MINGW64 ~/Bundle1Exercise1 (ft/contact-page)
+$ git add .
+
+LENOVO@DESKTOP-94SL70P MINGW64 ~/Bundle1Exercise1 (ft/contact-page)
+$ git commit -m 'Updates on contact page'
+[ft/contact-page 8a7d1f2] Updates on contact page
+ 1 file changed, 14 insertions(+)
+ create mode 100644 contact.html
+
+LENOVO@DESKTOP-94SL70P MINGW64 ~/Bundle1Exercise1 (ft/contact-page)
+$ git push
+fatal: The current branch ft/contact-page has no upstream branch.
+To push the current branch and set the remote as upstream, use  
+
+    git push --set-upstream origin ft/contact-page
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.      
+
+
+LENOVO@DESKTOP-94SL70P MINGW64 ~/Bundle1Exercise1 (ft/contact-page)
+$ git push --set-upstream origin ft/contact-page
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 763 bytes | 254.00 KiB/s, done.    
+Total 6 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)   
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/contact-page' on GitHub by visiting:
+remote:      https://github.com/christellealexia/Git-Bundle1-Exercise1/pull/new/ft/contact-page
+remote:
+To https://github.com/christellealexia/Git-Bundle1-Exercise1.git
+ * [new branch]      ft/contact-page -> ft/contact-page
+branch 'ft/contact-page' set up to track 'origin/ft/contact-page'.
+
+LENOVO@DESKTOP-94SL70P MINGW64 ~/Bundle1Exercise1 (ft/contact-page)
+$ git checkout -b ft/faq-page
+Switched to a new branch 'ft/faq-page'
+
+LENOVO@DESKTOP-94SL70P MINGW64 ~/Bundle1Exercise1 (ft/faq-page) 
+$ git add .
+
+LENOVO@DESKTOP-94SL70P MINGW64 ~/Bundle1Exercise1 (ft/faq-page) 
+$ git commit - m 'faq page added'
+error: pathspec '-' did not match any file(s) known to git
+error: pathspec 'm' did not match any file(s) known to git      
+error: pathspec 'faq page added' did not match any file(s) known to git
+
+LENOVO@DESKTOP-94SL70P MINGW64 ~/Bundle1Exercise1 (ft/faq-page) 
+$ git commit -m 'faq page added'
+[ft/faq-page cfefcb7] faq page added
+ 1 file changed, 13 insertions(+)
+ create mode 100644 faq.html
+
+LENOVO@DESKTOP-94SL70P MINGW64 ~/Bundle1Exercise1 (ft/faq-page) 
+$ git push
+fatal: The current branch ft/faq-page has no upstream branch.
+To push the current branch and set the remote as upstream, use  
+
+    git push --set-upstream origin ft/faq-page
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.      
+
+
+LENOVO@DESKTOP-94SL70P MINGW64 ~/Bundle1Exercise1 (ft/faq-page) 
+$ git push --set-upstream origin ft/faq-page
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 383 bytes | 383.00 KiB/s, done.    
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)   
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/faq-page' on GitHub by visiting:
+remote:      https://github.com/christellealexia/Git-Bundle1-Exercise1/pull/new/ft/faq-page
+remote:
+To https://github.com/christellealexia/Git-Bundle1-Exercise1.git
+ * [new branch]      ft/faq-page -> ft/faq-page
+branch 'ft/faq-page' set up to track 'origin/ft/faq-page'.
+q
+
+
+q
+
+
+This reverts commit 0b4f8b61407dcb21a8ba9ad226c163ed5e6137f4.
+
+```
 
 
