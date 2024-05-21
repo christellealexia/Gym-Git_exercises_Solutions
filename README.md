@@ -993,5 +993,53 @@ To https://github.com/christellealexia/Git-Bundle1-Exercise1.git
 branch 'ft/squashing' set up to track 'origin/ft/squashing'.
 PS C:\Users\LENOVO\thegym-projects\Bundle1Exercise1> 
 ```
+## BUndle 5
+### Exercise 2
+```bash
+PS C:\Users\LENOVO\thegym-projects> mkdir Git-cafe-exercise
 
+
+    Directory: C:\Users\LENOVO\thegym-projects
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         5/21/2024  12:14 PM                Git-cafe-exercise
+
+
+PS C:\Users\LENOVO\thegym-projects> cd Git-cafe-exercise
+PS C:\Users\LENOVO\thegym-projects\Git-cafe-exercise> git clone https://github.com/christellealexia/git-cafe-exercise.git
+Cloning into 'git-cafe-exercise'...
+remote: Enumerating objects: 107, done.
+remote: Counting objects: 100% (14/14), done.
+remote: Compressing objects: 100% (10/10), done.
+remote: Total 107 (delta 5), reused 4 (delta 4), pack-reused 93
+Receiving objects: 100% (107/107), 1.95 MiB | 1.04 MiB/s, done.
+Resolving deltas: 100% (5/5), done.
+PS C:\Users\LENOVO\thegym-projects\Git-cafe-exercise> cd git-cafe-exercise
+PS C:\Users\LENOVO\thegym-projects\Git-cafe-exercise\git-cafe-exercise> git add .
+PS C:\Users\LENOVO\thegym-projects\Git-cafe-exercise\git-cafe-exercise> git commit -m 'Rename from our place to restaurant'
+[main b39cdda] Rename from our place to restaurant
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+PS C:\Users\LENOVO\thegym-projects\Git-cafe-exercise\git-cafe-exercise> git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 342 bytes | 342.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/christellealexia/git-cafe-exercise.git
+   d1d3f9c..b39cdda  main -> main
+PS C:\Users\LENOVO\thegym-projects\Git-cafe-exercise\git-cafe-exercise>
+
+
+
+
+
+
+
+
+
+```
 
