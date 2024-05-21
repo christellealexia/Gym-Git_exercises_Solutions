@@ -1033,13 +1033,5 @@ To https://github.com/christellealexia/git-cafe-exercise.git
    d1d3f9c..b39cdda  main -> main
 PS C:\Users\LENOVO\thegym-projects\Git-cafe-exercise\git-cafe-exercise>
 
-
-
-
-
-
-
-
-
 ```
 
