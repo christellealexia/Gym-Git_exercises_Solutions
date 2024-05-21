@@ -912,6 +912,86 @@ To https://github.com/christellealexia/gitLearning-exercises.git
  * [new branch]      main -> main
 PS C:\Users\LENOVO\Bundle1Exercise1> 
 ```
+### Exercise 2
 
+```bash
+PS C:\Users\LENOVO\thegym-projects\Bundle1Exercise1> git checkout -b ft/footer
+Switched to a new branch 'ft/footer'
+PS C:\Users\LENOVO\thegym-projects\Bundle1Exercise1> git add .
+PS C:\Users\LENOVO\thegym-projects\Bundle1Exercise1> git commit -m 'Added footer'
+[ft/footer ea61ecb] Added footer
+ 1 file changed, 13 insertions(+)
+ create mode 100644 footer.html
+PS C:\Users\LENOVO\thegym-projects\Bundle1Exercise1> git add .
+PS C:\Users\LENOVO\thegym-projects\Bundle1Exercise1> git commit -m 'Updates'
+[ft/footer 590cbea] Updates
+ 1 file changed, 1 insertion(+)
+PS C:\Users\LENOVO\thegym-projects\Bundle1Exercise1> git push
+fatal: The current branch ft/footer has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/footer
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+PS C:\Users\LENOVO\thegym-projects\Bundle1Exercise1>  git push --set-upstream origin ft/footer
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 664 bytes | 332.00 KiB/s, done.
+Total 6 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (3/3), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/footer' on GitHub by visiting:
+remote:      https://github.com/christellealexia/Git-Bundle1-Exercise1/pull/new/ft/footer
+remote:
+To https://github.com/christellealexia/Git-Bundle1-Exercise1.git
+ * [new branch]      ft/footer -> ft/footer
+branch 'ft/footer' set up to track 'origin/ft/footer'.
+PS C:\Users\LENOVO\thegym-projects\Bundle1Exercise1> git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+PS C:\Users\LENOVO\thegym-projects\Bundle1Exercise1> git checkout -b ft/squashing
+Switched to a new branch 'ft/squashing'
+PS C:\Users\LENOVO\thegym-projects\Bundle1Exercise1> git merge --squash ft/footer
+Updating ed46eb7..590cbea
+Fast-forward
+Squash commit -- not updating HEAD
+ footer.html | 14 ++++++++++++++
+ 1 file changed, 14 insertions(+)
+ create mode 100644 footer.html
+PS C:\Users\LENOVO\thegym-projects\Bundle1Exercise1> git add .
+PS C:\Users\LENOVO\thegym-projects\Bundle1Exercise1> git commit -m 'footer changes squashing'
+[ft/squashing d027b0e] footer changes squashing
+ 1 file changed, 14 insertions(+)
+ create mode 100644 footer.html
+PS C:\Users\LENOVO\thegym-projects\Bundle1Exercise1> git push
+fatal: The current branch ft/squashing has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/squashing
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+PS C:\Users\LENOVO\thegym-projects\Bundle1Exercise1> git push --set-upstream origin ft/squashing
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 423 bytes | 423.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/squashing' on GitHub by visiting:
+remote:      https://github.com/christellealexia/Git-Bundle1-Exercise1/pull/new/ft/squashing
+remote:
+To https://github.com/christellealexia/Git-Bundle1-Exercise1.git
+ * [new branch]      ft/squashing -> ft/squashing
+branch 'ft/squashing' set up to track 'origin/ft/squashing'.
+PS C:\Users\LENOVO\thegym-projects\Bundle1Exercise1> 
+```
 
 
